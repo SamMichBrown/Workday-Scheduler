@@ -1,3 +1,5 @@
+// Variables
+
 var now = Date.now();
 var date = new Date(now);
 var currentTime = moment(date).format('dddd, MMMM Do');
@@ -10,6 +12,7 @@ if (!data) {
     console.log('localStorage is empty');
 }
 
+// Local storage functionality
 
 var events = JSON.parse(data);
 console.log('tasks', events);
@@ -27,8 +30,10 @@ function renderEvents(events){
 
 renderEvents(events);
 
+// Button functionality
+
 $(".saveBtn").click(function(){
- // console.log($(this).prev().val());
+ 
  var newEvent = {
      text:$.trim($(this).prev().val()), 
      time:$(this).parent().attr("id")
