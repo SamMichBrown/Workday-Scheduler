@@ -44,8 +44,4 @@ if(localStorage.getItem('events')){
 }
 });
 
-// $('#ParentDiv input');
-// $("p").click(function(){
-//alert("The paragraph was clicked.");
-//});
-//$( "li.third-item" ).prev()
+
